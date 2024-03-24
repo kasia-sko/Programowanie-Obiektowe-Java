@@ -6,36 +6,42 @@ public class TelewizorCRT extends Telewizor {
 	
 	protected Kolor kolor;
 	
-	public TelewizorCRT(LocalDate dataProdukcji, double przekatna, Sygnal sygnal, int kanal, Kolor kolor) {
-		super(dataProdukcji, przekatna, sygnal, kanal);
-		this.rodzajSygnalu = Sygnal.ANALOGOWY;
-		
-
+	public TelewizorCRT(double przekatna, Kolor kolor) {
+		super(przekatna);
+		this.kolor = kolor;
+	
 	}
 
 	@Override
-	public void wlaczDzwiek() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void wylaczDzwiek() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void wlaczObraz() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void wylaczObraz() {
-		// TODO Auto-generated method stub
-		
+	public void napraw() {
+		if(iloscWlaczen == 0) {
+			System.out.println("Popsuty na stałe");
+		} else {
+			super.napraw();
+		}
 	}
 	
-
+	@Override
+	public void wybierzKanal(int i) {
+		System.out.println("Brak sygnału analogowego");
+		odbieranyKanal = 0;
+	}
+	
+	
+	@Override
+	public String toString() {
+		if (wlaczone) {
+			return "TelewizorCRT: nazwa: " + nazwa +
+					", kolor= " + kolor +
+					", przekatna= " + przekatna +
+					", rodzaj sygnału: " + rodzajSygnalu +
+					", odbierany kanal= " + odbieranyKanal +
+					", data produkcji: " + dataProdukcji.getYear();
+		} else {
+			return "Wyłączony";
+		}
+	}
+	
+	
+	
 }

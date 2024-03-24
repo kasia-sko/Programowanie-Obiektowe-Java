@@ -1,6 +1,7 @@
 package pw.mini.po.punktowane1.urzadzenia;
 
 import java.time.LocalDate;
+import java.util.Random;
 
 public abstract class Telewizor extends UrzadzeniaRTV implements Udzwiekowienie, Obrazowanie{
 	
@@ -8,37 +9,50 @@ public abstract class Telewizor extends UrzadzeniaRTV implements Udzwiekowienie,
 	protected Sygnal rodzajSygnalu;
 	protected int odbieranyKanal;
 	
-	public Telewizor(LocalDate dataProdukcji, double przekatna, Sygnal sygnal, int kanal) {
-		super(dataProdukcji);
+	public Telewizor(double przekatna) {
+		super();
 		this.przekatna = przekatna;
-		this.rodzajSygnalu = sygnal;
-		this.odbieranyKanal = kanal;
+		this.rodzajSygnalu = Sygnal.ANALOGOWY;
 		
 	}
 
+
+	public abstract String toString();
+	
 	@Override
-	public void wlaczObraz() {
-		System.out.println("Obraz włączony");
-		
+	public void wlacz() {
+		if(wlaczone) {
+			System.out.println("Jest już włączone");
+		}
+		else if(iloscWlaczen == 0){
+			System.out.println("Urządzenie zepsute, spróbuj je naprawić");
+		}
+		else {
+			wlaczone = true;
+			wlaczDzwiek();
+			wlaczObraz();
+			iloscWlaczen--;
+			}
+	}
+	
+	@Override
+	public void wylacz() {
+		if (wlaczone) {
+			wylaczDzwiek();
+			wylaczObraz();
+			wlaczone = false;
+		}
+		else {
+			System.out.println("Urządzenie jest już wyłączone");
+		}
 	}
 
 	@Override
-	public void wylaczObraz() {
-		System.out.println("Obraz wyłączony");
+	public void wybierzKanal(int i) {
+		odbieranyKanal = i;
 		
 	}
-
-	@Override
-	public void wlaczDzwiek() {
-		System.out.println("Dzwięk włączony");
-		
-	}
-
-	@Override
-	public void wylaczDzwiek() {
-		System.out.println("Dzwięk wyłączony");
-		
-	}
+	
 	
 	
 

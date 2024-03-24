@@ -2,5 +2,5 @@ package pw.mini.po.punktowane1.urzadzenia;
 
 public interface Odbieranie {
 
-	void zakres();
+	void wybierzKanal(int i);
 }
