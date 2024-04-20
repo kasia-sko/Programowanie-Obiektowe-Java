@@ -3,7 +3,8 @@ import java.util.Random;
 
 public class ObiektyKopalne implements MineryObjectEvaluator{
 	
-	protected double bazowaWartoscRynkowa;
+	protected
+	double bazowaWartoscRynkowa;
 	static Random random = new Random();
 	
 	public ObiektyKopalne(double bazowaWartoscRynkowa) {
