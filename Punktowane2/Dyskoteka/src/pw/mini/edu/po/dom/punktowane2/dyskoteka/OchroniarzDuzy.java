@@ -44,6 +44,7 @@ public class OchroniarzDuzy extends OchroniarzMaly{
         } else {
             return false;
         }
+
     }
 	
 	// wersja bez visitora

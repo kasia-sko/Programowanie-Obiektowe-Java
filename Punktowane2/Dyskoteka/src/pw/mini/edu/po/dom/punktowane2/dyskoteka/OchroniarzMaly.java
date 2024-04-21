@@ -41,5 +41,6 @@ public class OchroniarzMaly {
         } else {
             return false;
         }
+
     }
 }

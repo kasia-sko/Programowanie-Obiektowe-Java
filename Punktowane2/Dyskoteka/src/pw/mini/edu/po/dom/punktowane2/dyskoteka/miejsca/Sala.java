@@ -9,7 +9,7 @@ import pw.mini.edu.po.dom.punktowane2.dyskoteka.uczestnik.Uczestnik;
 public class Sala {
 	
 	private Set<Uczestnik> uczestnicy = new LinkedHashSet<Uczestnik>();
-	protected static int maksymalnaPojemnosc;
+	protected int maksymalnaPojemnosc;
 	private int aktualnaPojemnosc;
 	
 	public Sala(int maksymalnaPojemnosc) {
@@ -22,7 +22,10 @@ public class Sala {
 		if (aktualnaPojemnosc < maksymalnaPojemnosc) {
 			uczestnicy.add(u);
 			aktualnaPojemnosc++;
+//			System.out.println(aktualnaPojemnosc);
 		}
-		else throw new PrzekroczonaPojemnoscException();
+		else {
+			throw new PrzekroczonaPojemnoscException();
+			}
 	}
 }

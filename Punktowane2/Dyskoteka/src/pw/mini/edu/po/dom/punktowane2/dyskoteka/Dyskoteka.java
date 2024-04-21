@@ -18,7 +18,7 @@ public class Dyskoteka {
 	
 	public Dyskoteka() {
 		this.hol = new Hol();
-		this.salaMala = new Sala(51);
+		this.salaMala = new Sala(51); // za duze i nie wyrzuci wyjatku pewnie
 		this.salaDuza = new Sala(75);
 		this.ochroniarzMaly = new OchroniarzMaly(salaMala, salaDuza, hol);
 		this.ochroniarzDuzy = new OchroniarzDuzy(salaMala, salaDuza, hol, new RejestrObcych());
@@ -52,5 +52,6 @@ public class Dyskoteka {
 	public void goLive() {
 		inviteAll();
 		ochroniarzDuzy.printStrangers();
+		System.out.println(ochroniarzDuzy.rejestr.rejestr.size());
 	}
 }
