@@ -1,0 +1,13 @@
+S---no---kurczak---250---12,5---
+M---yes---wolowina---300---15,0---
+L---no---mix---450---20,0---
+S---ryz---kurczak---350---false---18,0---
+M---kasza---wolowina---400---true---22,0---
+L---frytki---mix---500---false---25,0---
+M---no---kurczak---275---13,5---
+L---yes---wolowina---350---17,0---
+S---frytki---kurczak---320---true---19,0---
+L---ryz---mix---480---false---23,0---
+M---no---mix---300---14,0---
+S---kasza---wolowina---360---false---20,0---
+M---frytki---kurczak---350---false---25,0---

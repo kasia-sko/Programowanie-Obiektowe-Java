@@ -1,0 +1,50 @@
+O###18:46###Paryż (CDG)###Ai 1013###Iberia###started###135-182###
+O###10:27###Londyn (LHR)###Wi 1335###Air France###started###127-168###
+O###02:26###Madryt (MAD)###Ai 2741###British Airways###canceled###138-168###
+P###02:34###Madryt (MAD)###Br 1888###Lufthansa###false###4###
+O###23:48###Madryt (MAD)###Lu 1773###Iberia###canceled###117-199###
+O###23:15###Paryż (CDG)###Ib 2461###Iberia###started###118-190###
+O###10:26###Londyn (LHR)###Ib 2815###Air France###boarding###100-169###
+P###02:17###Ulm (FMM)###Br 2740###Wizz Air###false###19###
+O###00:23###Paryż (CDG)###Ai 2595###Lufthansa###canceled###127-157###
+P###20:53###Ulm (FMM)###Ai 2337###Lufthansa###true###12###
+P###21:45###Madryt (MAD)###Ai 2319###Air France###false###18###
+O###13:27###Londyn (LHR)###Wi 1132###Air France###canceled###110-161###
+O###20:05###Ulm (FMM)###Br 2784###Wizz Air###started###103-161###
+P###18:27###Ulm (FMM)###Ib 2310###Air France###false###9###
+P###23:41###Londyn (LHR)###Wi 2050###Wizz Air###true###10###
+O###09:15###Berlin (TXL)###Ib 1522###Iberia###boarding###130-155###
+O###19:51###Berlin (TXL)###Wi 1647###Lufthansa###canceled###149-184###
+P###02:51###Berlin (TXL)###Lu 1529###Iberia###false###7###
+O###09:54###Ulm (FMM)###Lu 2405###Wizz Air###canceled###123-183###
+O###18:11###Londyn (LHR)###Lu 2642###Iberia###started###136-164###
+P###04:55###Londyn (LHR)###Br 1353###British Airways###true###20###
+P###02:27###Madryt (MAD)###Br 1227###Iberia###false###20###
+P###16:04###Londyn (LHR)###Ib 1094###Iberia###true###15###
+P###06:30###Londyn (LHR)###Ai 1500###Lufthansa###true###20###
+P###02:15###Paryż (CDG)###Ai 1722###British Airways###false###6###
+P###09:37###Madryt (MAD)###Ai 1269###British Airways###true###12###
+P###08:29###Londyn (LHR)###Ai 1862###British Airways###false###14###
+O###21:46###Berlin (TXL)###Lu 2428###Wizz Air###boarding###123-167###
+O###13:54###Paryż (CDG)###Ai 1726###Wizz Air###started###142-169###
+O###17:08###Berlin (TXL)###Ib 1251###Iberia###canceled###135-166###
+P###06:40###Paryż (CDG)###Lu 1810###British Airways###true###20###
+O###12:16###Ulm (FMM)###Ib 1616###British Airways###canceled###106-192###
+O###23:07###Paryż (CDG)###Wi 2513###Air France###canceled###132-157###
+O###03:39###Madryt (MAD)###Ib 1797###British Airways###canceled###129-152###
+P###05:08###Ulm (FMM)###Wi 1046###Wizz Air###false###19###
+O###10:37###Londyn (LHR)###Ib 1200###Wizz Air###boarding###129-190###
+O###09:00###Berlin (TXL)###Br 1625###Iberia###started###100-164###
+O###17:45###Paryż (CDG)###Ai 2780###Lufthansa###started###147-153###
+P###14:36###Londyn (LHR)###Br 1254###Wizz Air###false###10###
+P###18:29###Madryt (MAD)###Ai 1238###Air France###false###9###
+O###10:57###Londyn (LHR)###Ai 2072###British Airways###started###125-173###
+P###12:55###Londyn (LHR)###Br 1360###Wizz Air###false###14###
+O###05:38###Paryż (CDG)###Ai 1589###Air France###canceled###125-152###
+P###12:50###Ulm (FMM)###Ib 2823###British Airways###true###8###
+O###21:09###Madryt (MAD)###Ib 1470###Lufthansa###started###114-174###
+P###08:10###Ulm (FMM)###Ai 1183###Lufthansa###true###15###
+P###19:18###Paryż (CDG)###Ai 2348###Iberia###true###9###
+O###01:54###Madryt (MAD)###Ib 1427###Wizz Air###started###108-162###
+O###12:55###Paryż (CDG)###Ib 1034###Iberia###canceled###104-155###
+O###22:03###Paryż (CDG)###Br 1718###Iberia###boarding###107-171###
