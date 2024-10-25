@@ -4,12 +4,14 @@ import java.util.Random;
 
 import pl.edu.pw.mini.po.dom.punktowane2.konduktor.bilety.Bilet;
 
-public class KasownikDoBiletowOnline extends KasownikDoBiletow{
+public class KasownikDoBiletowOnline<T> extends KasownikDoBiletow{
 	
 	private static final Random random = new Random();
- 
-	public KasownikDoBiletowOnline(SystemSprzedazyBiletow system) {
+	private T generatorKomentarzy;
+	
+	public KasownikDoBiletowOnline(SystemSprzedazyBiletow system, T generatorKomentarzy) {
 		super(system);
+		this.generatorKomentarzy = generatorKomentarzy;
 	}
 
 	@Override
@@ -18,8 +20,13 @@ public class KasownikDoBiletowOnline extends KasownikDoBiletow{
 		if (x < 2) {
 			throw new BrakZasieguException();
 		}
-		return this.getSystem().zweryfikujBilet(bilet);
+		boolean s = this.getSystem().zweryfikujBilet(bilet);
+		if(!s) {
+			System.out.println(generatorKomentarzy.toString());
+		}
+		return s;
 	}
+	
 	
 
 }
