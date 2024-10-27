@@ -9,6 +9,8 @@ public class Main {
         apis.dodajPszczole(new Apis.KrolowaMatka("Alicja", 7));
         apis.dodajPszczole(apis.new Truten("Leon", 3));
         apis.dodajPszczole(new Apis.Robotnica("Ola", 4));
+        apis.dodajPszczole(new Apis.Robotnica("Kasia", 3));
+
 
         apis.sortujWgSilyIImienia();
 

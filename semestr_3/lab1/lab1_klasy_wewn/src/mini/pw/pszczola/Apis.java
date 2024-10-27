@@ -69,23 +69,49 @@ public class Apis {
 //        for (Robotnica robotnica : robotnice) {
 //            robotnica.zbierajNektar(random.nextInt(21)); // Zbierają losową ilość nektaru
 //        }
-        Truten truten1 = new Truten("Gucio", 5);
-        Truten truten2 = new Truten("Radek", 4);
-        dodajPszczole(truten1);
-        dodajPszczole(truten2);
+//        Truten truten1 = new Truten("Gucio", 5);
+//        Truten truten2 = new Truten("Radek", 4);
+//        dodajPszczole(truten1);
+//        dodajPszczole(truten2);
+//
+//       List<Pszczola> krolowe = znajdzKrolowa();
+//       truten1.zaplodnienie((KrolowaMatka) krolowe.get(random.nextInt(krolowe.size())));
+//       truten2.zaplodnienie((KrolowaMatka) krolowe.get(random.nextInt(krolowe.size())));
+//
+//
+//        Robotnica robotnica1 = new Robotnica("Maja", 20,10);
+//        Robotnica robotnica2 = new Robotnica("Basia", 10,12);
+//        dodajPszczole(robotnica1);
+//        dodajPszczole(robotnica2);
+//
+//        robotnica1.zbierajNektar(50);
+//        robotnica2.zbierajNektar(20);
 
-       List<Pszczola> krolowe = znajdzKrolowa();
-       truten1.zaplodnienie((KrolowaMatka) krolowe.get(random.nextInt(krolowe.size())));
-       truten2.zaplodnienie((KrolowaMatka) krolowe.get(random.nextInt(krolowe.size())));
+        int licznikTruten = 2;
+        int licznikRobotnica = random.nextInt(10);
+        int licznikDostepnychRobotnic = 0;
+
+        for (Pszczola pszczola : listaPszczol) {
+            if (pszczola instanceof Robotnica) {
+                licznikDostepnychRobotnic++;
+            }
+        }
+
+        if (licznikRobotnica > licznikDostepnychRobotnic) {
+            licznikRobotnica = licznikDostepnychRobotnic; // Ustaw licznik robotnic na maksymalną dostępną liczbę
+        }
 
 
-        Robotnica robotnica1 = new Robotnica("Maja", 20,10);
-        Robotnica robotnica2 = new Robotnica("Basia", 10,12);
-        dodajPszczole(robotnica1);
-        dodajPszczole(robotnica2);
-
-        robotnica1.zbierajNektar(50);
-        robotnica2.zbierajNektar(20);
+        for (Pszczola pszczola : listaPszczol){
+            if (licznikTruten > 0 && pszczola instanceof Truten){
+                pszczola.run();
+                licznikTruten--;
+            }
+            if (licznikRobotnica > 0 && pszczola instanceof Robotnica){
+                pszczola.run();
+                licznikRobotnica--;
+            }
+        }
     }
 
     public void dodajPszczole(Pszczola p){
@@ -196,7 +222,7 @@ public class Apis {
             this.przydatny = true;
         }
 
-        public void zaplodnienie(KrolowaMatka krolowa){
+        private void zaplodnienie(KrolowaMatka krolowa){
             if(!przydatny){
                 System.out.println("już spełniłem swoje zadanie :(");
             }
