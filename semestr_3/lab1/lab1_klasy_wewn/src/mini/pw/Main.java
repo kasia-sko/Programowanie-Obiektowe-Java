@@ -14,17 +14,14 @@ public class Main {
 
         apis.sortujWgSilyIImienia();
 
-        for (Apis.Pszczola p : apis.getListaPszczol()) {
-            System.out.println(p);
-        }
+       apis.getInfoApis();
 
         apis.zyciePszczol();
         apis.dodajZolnierza();
         apis.sortujWgSilyIImienia();
 
-        for (Apis.Pszczola p : apis.getListaPszczol()) {
-            System.out.println(p);
-        }
+
+        apis.getInfoApis();
 
         apis.watkiPszczol();
     }

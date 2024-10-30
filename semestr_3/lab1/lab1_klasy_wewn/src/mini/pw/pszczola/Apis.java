@@ -88,18 +88,18 @@ public class Apis {
 //        robotnica2.zbierajNektar(20);
 
         int licznikTruten = 2;
-        int licznikRobotnica = random.nextInt(10);
-        int licznikDostepnychRobotnic = 0;
-
-        for (Pszczola pszczola : listaPszczol) {
-            if (pszczola instanceof Robotnica) {
-                licznikDostepnychRobotnic++;
-            }
-        }
-
-        if (licznikRobotnica > licznikDostepnychRobotnic) {
-            licznikRobotnica = licznikDostepnychRobotnic; // Ustaw licznik robotnic na maksymalną dostępną liczbę
-        }
+        int licznikRobotnica = random.nextInt(8);
+//        int licznikDostepnychRobotnic = 0;
+//
+//        for (Pszczola pszczola : listaPszczol) {
+//            if (pszczola instanceof Robotnica) {
+//                licznikDostepnychRobotnic++;
+//            }
+//        }
+//
+//        if (licznikRobotnica > licznikDostepnychRobotnic) {
+//            licznikRobotnica = licznikDostepnychRobotnic;
+//        }
 
 
         for (Pszczola pszczola : listaPszczol){
@@ -163,8 +163,15 @@ public class Apis {
 
     }
 
+    public void getInfoApis(){
+        System.out.println("W ulu jest " + listaPszczol.size() + " pszczół");
+        for (Apis.Pszczola p : getListaPszczol()) {
+            System.out.println(p);
+        }
+    }
 
-    public static abstract class Pszczola implements Runnable{
+
+    private static abstract class Pszczola implements Runnable{
 
         protected String imie;
         protected int silaAtaku;
@@ -186,7 +193,7 @@ public class Apis {
 
     public static class KrolowaMatka extends Pszczola {
 
-        protected int iloscJaj;
+        private int iloscJaj;
 
         public KrolowaMatka(String imie, int wiek) {
             super(imie, wiek);
@@ -210,16 +217,13 @@ public class Apis {
 
     public class Truten extends Pszczola{
 
-        protected boolean przydatny;
+        private boolean przydatny;
 
-        public Truten(String imie, int silaAtaku, int wiek) {
-            super(imie, silaAtaku, wiek);
-            this.przydatny = true;
-        }
 
         public Truten(String imie, int wiek) {
             super(imie, wiek);
             this.przydatny = true;
+            this.silaAtaku = 0;
         }
 
         private void zaplodnienie(KrolowaMatka krolowa){
@@ -235,7 +239,7 @@ public class Apis {
 
         @Override
         public void run() {
-            if(random.nextInt(10) > 5){
+            if(random.nextBoolean()){
                 System.out.println("Jak przyjemnie nie robić nic...");
             }
             else {
@@ -257,7 +261,7 @@ public class Apis {
 
     public static class Robotnica extends Pszczola{
 
-        protected int iloscWyprodukowanegoMiodu;
+        private int iloscWyprodukowanegoMiodu;
 
         public Robotnica(String imie, int silaAtaku, int wiek) {
             super(imie, silaAtaku, wiek);

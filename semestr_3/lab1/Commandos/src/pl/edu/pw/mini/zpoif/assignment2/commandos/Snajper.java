@@ -18,12 +18,14 @@ public class Snajper extends KomandosZBeretem{
             czekolada.eat();
         }
         else {
-            Jedzenie kawa = new Jedzenie() {
+            class Kawa extends Jedzenie {
                 @Override
                 public void eat() {
                     System.out.println("Kawa");
                 }
-            };
+            }
+            Kawa kawa = new Kawa();
+            kawa.eat();
         }
     }
 
@@ -33,12 +35,14 @@ public class Snajper extends KomandosZBeretem{
             weapon.use();
         }
         else if(random.nextInt(10) > 7){
-            Weapon rozszerzonyKarabinSnajperski = new Weapon() {
+            class RozszerzonyKarabinSnajperski extends KarabinSnajperski {
                 @Override
                 public void use() {
                     System.out.println("Używam rozszerzonego karabinu");
                 }
-            };
+            }
+            RozszerzonyKarabinSnajperski rozszerzonyKarabinSnajperski = new RozszerzonyKarabinSnajperski();
+            rozszerzonyKarabinSnajperski.use();
         }
 
     }
