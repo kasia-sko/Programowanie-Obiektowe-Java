@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="01d0ba38-6883-400c-8192-46944686c921" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../Górnik/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Górnik/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Górnik/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Górnik/src/pw/mini/po/lab1/gornik/Adit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Górnik/src/pw/mini/po/lab1/gornik/Chalkolit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Górnik/src/pw/mini/po/lab1/gornik/Demonstrator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Górnik/src/pw/mini/po/lab1/gornik/FormaWystepowania.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Górnik/src/pw/mini/po/lab1/gornik/Górnik.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Górnik/src/pw/mini/po/lab1/gornik/MineryObjectEvaluator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Górnik/src/pw/mini/po/lab1/gornik/ObiektyKopalne.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Górnik/src/pw/mini/po/lab1/gornik/RadioaktywneObiektyKopalne.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Górnik/src/pw/mini/po/lab1/gornik/Skała.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Górnik/src/pw/mini/po/lab1/gornik/Uraninit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Kret/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Kret/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Kret/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Kret/src/pw/mini/po/lab1/kret/Demonstrator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Kret/src/pw/mini/po/lab1/kret/Environment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Kret/src/pw/mini/po/lab1/kret/Gatunek.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Kret/src/pw/mini/po/lab1/kret/Kret.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Kret/src/pw/mini/po/lab1/kret/MoleMotion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Kret/src/pw/mini/po/lab1/kret/obiektyZiemi/Dzdzownica.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Kret/src/pw/mini/po/lab1/kret/obiektyZiemi/Gleba.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Kret/src/pw/mini/po/lab1/kret/obiektyZiemi/Larwa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Kret/src/pw/mini/po/lab1/kret/obiektyZiemi/ObiektyZiemi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Dyskoteka/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Dyskoteka/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Dyskoteka/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Dyskoteka/src/pw/mini/edu/po/dom/punktowane2/dyskoteka/Demonstrator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Dyskoteka/src/pw/mini/edu/po/dom/punktowane2/dyskoteka/Dyskoteka.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Dyskoteka/src/pw/mini/edu/po/dom/punktowane2/dyskoteka/OchroniarzDuzy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Dyskoteka/src/pw/mini/edu/po/dom/punktowane2/dyskoteka/OchroniarzMaly.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Dyskoteka/src/pw/mini/edu/po/dom/punktowane2/dyskoteka/PrzekroczonaPojemnoscException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Dyskoteka/src/pw/mini/edu/po/dom/punktowane2/dyskoteka/RejestrObcych.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Dyskoteka/src/pw/mini/edu/po/dom/punktowane2/dyskoteka/miejsca/Hol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Dyskoteka/src/pw/mini/edu/po/dom/punktowane2/dyskoteka/miejsca/Sala.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Dyskoteka/src/pw/mini/edu/po/dom/punktowane2/dyskoteka/uczestnik/CzlowiekZZewnatrz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Dyskoteka/src/pw/mini/edu/po/dom/punktowane2/dyskoteka/uczestnik/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Dyskoteka/src/pw/mini/edu/po/dom/punktowane2/dyskoteka/uczestnik/Studentka.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Dyskoteka/src/pw/mini/edu/po/dom/punktowane2/dyskoteka/uczestnik/Uczestnik.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Dyskoteka/src/pw/mini/edu/po/dom/punktowane2/dyskoteka/uczestnik/UczestnikVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Dyskoteka/src/pw/mini/edu/po/dom/punktowane2/dyskoteka/uczestnik/Visitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Konduktor/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Konduktor/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Konduktor/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Konduktor/src/pl/edu/pw/mini/po/dom/punktowane2/konduktor/Demonstrator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Konduktor/src/pl/edu/pw/mini/po/dom/punktowane2/konduktor/Konduktor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Konduktor/src/pl/edu/pw/mini/po/dom/punktowane2/konduktor/bilety/Bilet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Konduktor/src/pl/edu/pw/mini/po/dom/punktowane2/konduktor/bilety/RelacjaPociagu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Konduktor/src/pl/edu/pw/mini/po/dom/punktowane2/konduktor/bilety/kasownik/BrakZasieguException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Konduktor/src/pl/edu/pw/mini/po/dom/punktowane2/konduktor/bilety/kasownik/GeneratorKomentarza.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Konduktor/src/pl/edu/pw/mini/po/dom/punktowane2/konduktor/bilety/kasownik/KasownikDoBiletow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Konduktor/src/pl/edu/pw/mini/po/dom/punktowane2/konduktor/bilety/kasownik/KasownikDoBiletowOffline.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Konduktor/src/pl/edu/pw/mini/po/dom/punktowane2/konduktor/bilety/kasownik/KasownikDoBiletowOnline.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Konduktor/src/pl/edu/pw/mini/po/dom/punktowane2/konduktor/bilety/kasownik/SprawdzajacyBilety.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Konduktor/src/pl/edu/pw/mini/po/dom/punktowane2/konduktor/bilety/kasownik/SystemSprzedazyBiletow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Konduktor/src/pl/edu/pw/mini/po/dom/punktowane2/konduktor/wagon/Podrozny.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Konduktor/src/pl/edu/pw/mini/po/dom/punktowane2/konduktor/wagon/Stolik.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Konduktor/src/pl/edu/pw/mini/po/dom/punktowane2/konduktor/wagon/Wagon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Pralnia/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Pralnia/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Pralnia/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Pralnia/src/pl/edu/pw/mini/po/dom/punktowane2/pralnia/Certificate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Pralnia/src/pl/edu/pw/mini/po/dom/punktowane2/pralnia/Demonstrator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Pralnia/src/pl/edu/pw/mini/po/dom/punktowane2/pralnia/Klient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Pralnia/src/pl/edu/pw/mini/po/dom/punktowane2/pralnia/Pierzacy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Pralnia/src/pl/edu/pw/mini/po/dom/punktowane2/pralnia/Pralnia.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Pralnia/src/pl/edu/pw/mini/po/dom/punktowane2/pralnia/Swiat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Pralnia/src/pl/edu/pw/mini/po/dom/punktowane2/pralnia/ubrania/Koszula.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Pralnia/src/pl/edu/pw/mini/po/dom/punktowane2/pralnia/ubrania/Kufajka.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Pralnia/src/pl/edu/pw/mini/po/dom/punktowane2/pralnia/ubrania/Plaszcz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Pralnia/src/pl/edu/pw/mini/po/dom/punktowane2/pralnia/ubrania/Ubranie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Pralnia/src/pl/edu/pw/mini/po/dom/punktowane2/pralnia/ubrania/elementyKieszeni/ElementKieszeni.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Pralnia/src/pl/edu/pw/mini/po/dom/punktowane2/pralnia/ubrania/elementyKieszeni/Granat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Pralnia/src/pl/edu/pw/mini/po/dom/punktowane2/pralnia/ubrania/elementyKieszeni/GranatVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Pralnia/src/pl/edu/pw/mini/po/dom/punktowane2/pralnia/ubrania/elementyKieszeni/Guzik.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Pralnia/src/pl/edu/pw/mini/po/dom/punktowane2/pralnia/ubrania/elementyKieszeni/KartkaZAdresem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Pralnia/src/pl/edu/pw/mini/po/dom/punktowane2/pralnia/ubrania/elementyKieszeni/OdbezpieczonyGranatException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/Pralnia/src/pl/edu/pw/mini/po/dom/punktowane2/pralnia/ubrania/elementyKieszeni/Visitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/PrzejścieGraniczne/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/PrzejścieGraniczne/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/PrzejścieGraniczne/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/PrzejścieGraniczne/src/pl/mini/pw/mini/po/dom/punktowane2/przejsciegraniczne/Areszt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/PrzejścieGraniczne/src/pl/mini/pw/mini/po/dom/punktowane2/przejsciegraniczne/Celnik.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/PrzejścieGraniczne/src/pl/mini/pw/mini/po/dom/punktowane2/przejsciegraniczne/NieletniException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/PrzejścieGraniczne/src/pl/mini/pw/mini/po/dom/punktowane2/przejsciegraniczne/PrzejscieGraniczne.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/PrzejścieGraniczne/src/pl/mini/pw/mini/po/dom/punktowane2/przejsciegraniczne/demonstrator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/PrzejścieGraniczne/src/pl/mini/pw/mini/po/dom/punktowane2/przejsciegraniczne/podrozny/Podrozny.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/PrzejścieGraniczne/src/pl/mini/pw/mini/po/dom/punktowane2/przejsciegraniczne/podrozny/Przemytnik.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/PrzejścieGraniczne/src/pl/mini/pw/mini/po/dom/punktowane2/przejsciegraniczne/podrozny/Szpieg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/PrzejścieGraniczne/src/pl/mini/pw/mini/po/dom/punktowane2/przejsciegraniczne/podrozny/Turysta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/PrzejścieGraniczne/src/pl/mini/pw/mini/po/dom/punktowane2/przejsciegraniczne/podrozny/UzbrojonyPodrozny.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/PrzejścieGraniczne/src/pl/mini/pw/mini/po/dom/punktowane2/przejsciegraniczne/towary/LegalnyTowar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/PrzejścieGraniczne/src/pl/mini/pw/mini/po/dom/punktowane2/przejsciegraniczne/towary/Towar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane2/PrzejścieGraniczne/src/pl/mini/pw/mini/po/dom/punktowane2/przejsciegraniczne/towary/TrefnyTowar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Asteroidy/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Asteroidy/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Asteroidy/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Asteroidy/from_nasa/asteroidy.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Asteroidy/src/pl/pw/mini/po/dom/punktowane3/asteroidy/Demonstrator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Asteroidy/src/pl/pw/mini/po/dom/punktowane3/asteroidy/informacje/InformacjeVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Asteroidy/src/pl/pw/mini/po/dom/punktowane3/asteroidy/informacje/NiepoprawnaSrednicaException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Asteroidy/src/pl/pw/mini/po/dom/punktowane3/asteroidy/informacje/OgolneInformacje.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Asteroidy/src/pl/pw/mini/po/dom/punktowane3/asteroidy/informacje/Orbita.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Asteroidy/src/pl/pw/mini/po/dom/punktowane3/asteroidy/informacje/Srednica.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Asteroidy/src/pl/pw/mini/po/dom/punktowane3/asteroidy/informacje/SzczegoloweInformacje.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Asteroidy/src/pl/pw/mini/po/dom/punktowane3/asteroidy/procesy/AsteroidProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Asteroidy/src/pl/pw/mini/po/dom/punktowane3/asteroidy/procesy/AstroParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Asteroidy/src/pl/pw/mini/po/dom/punktowane3/asteroidy/procesy/GetInformacjeVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Asteroidy/src/pl/pw/mini/po/dom/punktowane3/asteroidy/procesy/MyUnforgvingBufferedReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/GeneratorLotow/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/GeneratorLotow/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/GeneratorLotow/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/GeneratorLotow/src/pl/pw/mini/po/dom/loty/GenerateFlightsFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Kebaby/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Kebaby/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Kebaby/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Kebaby/resources/kebaby.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Kebaby/src/pl/pw/mini/po/dom/punktowane3/kebaby/Demonstator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Kebaby/src/pl/pw/mini/po/dom/punktowane3/kebaby/Kebab.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Kebaby/src/pl/pw/mini/po/dom/punktowane3/kebaby/KebabCiasto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Kebaby/src/pl/pw/mini/po/dom/punktowane3/kebaby/KebabTalerz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Kebaby/src/pl/pw/mini/po/dom/punktowane3/kebaby/parser/KebabParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Kebaby/src/pl/pw/mini/po/dom/punktowane3/kebaby/parser/NieznanyRodzajMiesa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Kebaby/src/pl/pw/mini/po/dom/punktowane3/kebaby/procesor/KebabProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Kebaby/src/pl/pw/mini/po/dom/punktowane3/kebaby/procesor/KebabTalerzVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Kebaby/src/pl/pw/mini/po/dom/punktowane3/kebaby/procesor/KebabVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Kebaby/src/pl/pw/mini/po/dom/punktowane3/kebaby/wartosci/Dodatek.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Kebaby/src/pl/pw/mini/po/dom/punktowane3/kebaby/wartosci/GrubeCiasto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Kebaby/src/pl/pw/mini/po/dom/punktowane3/kebaby/wartosci/Mieso.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Kebaby/src/pl/pw/mini/po/dom/punktowane3/kebaby/wartosci/Rozmiar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Odloty/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Odloty/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Odloty/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Odloty/resources/loty.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Odloty/src/pl/pw/mini/po/dom/punktowane3/odloty/Demonstrator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Odloty/src/pl/pw/mini/po/dom/punktowane3/odloty/FlightParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Odloty/src/pl/pw/mini/po/dom/punktowane3/odloty/FlightsProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Odloty/src/pl/pw/mini/po/dom/punktowane3/odloty/Lot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Odloty/src/pl/pw/mini/po/dom/punktowane3/odloty/NiepoprawnyCheckInException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Odloty/src/pl/pw/mini/po/dom/punktowane3/odloty/Odlot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Odloty/src/pl/pw/mini/po/dom/punktowane3/odloty/Przylot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane3/Odloty/src/pl/pw/mini/po/dom/punktowane3/odloty/Status.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane4/ReverseEngineering/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane4/ReverseEngineering/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane4/ReverseEngineering/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane4/ReverseEngineering/src/pl/pw/mini/po/dom/punktowane4/engineering/Demonstrator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane4/ReverseEngineering/src/pl/pw/mini/po/dom/punktowane4/engineering/MyApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane4/ReverseEngineering/src/pl/pw/mini/po/dom/punktowane4/engineering/MyBottomPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane4/ReverseEngineering/src/pl/pw/mini/po/dom/punktowane4/engineering/MyCircle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane4/ReverseEngineering/src/pl/pw/mini/po/dom/punktowane4/engineering/MyFigure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane4/ReverseEngineering/src/pl/pw/mini/po/dom/punktowane4/engineering/MyFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane4/ReverseEngineering/src/pl/pw/mini/po/dom/punktowane4/engineering/MyGraphicPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane4/ReverseEngineering/src/pl/pw/mini/po/dom/punktowane4/engineering/MySquare.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane4/Spray/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane4/Spray/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane4/Spray/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane4/Spray/src/pw/mini/po/dom/punktowane4/spray/Demonstrator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane4/Spray/src/pw/mini/po/dom/punktowane4/spray/MyApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane4/Spray/src/pw/mini/po/dom/punktowane4/spray/MyBottomPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane4/Spray/src/pw/mini/po/dom/punktowane4/spray/MyCircle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane4/Spray/src/pw/mini/po/dom/punktowane4/spray/MyDot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane4/Spray/src/pw/mini/po/dom/punktowane4/spray/MyFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane4/Spray/src/pw/mini/po/dom/punktowane4/spray/MyGraphicPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane4/Spray/src/pw/mini/po/dom/punktowane4/spray/MyGraphics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane4/Spray/src/pw/mini/po/dom/punktowane4/spray/MyMenuPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane4/Spray/src/pw/mini/po/dom/punktowane4/spray/MySpray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Punktowane4/Spray/src/pw/mini/po/dom/punktowane4/spray/MySquare.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RTV/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RTV/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RTV/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RTV/src/pw/mini/po/punktowane1/urzadzenia/Czestotliwosc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RTV/src/pw/mini/po/punktowane1/urzadzenia/Kolor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RTV/src/pw/mini/po/punktowane1/urzadzenia/Matryca.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RTV/src/pw/mini/po/punktowane1/urzadzenia/Obrazowanie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RTV/src/pw/mini/po/punktowane1/urzadzenia/Odbieranie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RTV/src/pw/mini/po/punktowane1/urzadzenia/OdbieranieRozszerzone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RTV/src/pw/mini/po/punktowane1/urzadzenia/Radio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RTV/src/pw/mini/po/punktowane1/urzadzenia/Sygnal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RTV/src/pw/mini/po/punktowane1/urzadzenia/Telewizor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RTV/src/pw/mini/po/punktowane1/urzadzenia/TelewizorCRT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RTV/src/pw/mini/po/punktowane1/urzadzenia/TelewizorPlaski.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RTV/src/pw/mini/po/punktowane1/urzadzenia/Udzwiekowienie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RTV/src/pw/mini/po/punktowane1/urzadzenia/UrzadzeniaRTV.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RTV/src/pw/mini/po/punktowane1/urzadzenia/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Rzeka/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Rzeka/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Rzeka/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Rzeka/src/pw/mini/po/rzeka/BlyszczaceSuweniry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Rzeka/src/pw/mini/po/rzeka/But.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Rzeka/src/pw/mini/po/rzeka/Butelka.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Rzeka/src/pw/mini/po/rzeka/Demonstrator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Rzeka/src/pw/mini/po/rzeka/Moneta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Rzeka/src/pw/mini/po/rzeka/RodzajButelki.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Rzeka/src/pw/mini/po/rzeka/Suweniry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Rzeka/src/pw/mini/po/rzeka/WycinekRzeki.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Rzeka/src/pw/mini/po/rzeka/WycinekRzekiIlosc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Rzeka/src/pw/mini/po/rzeka/WycinekRzekiTekst.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Rzeka/src/pw/mini/po/rzeka/Zegarek.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Rzeka/src/pw/mini/po/rzeka/ZegarekPodwodny.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Termika/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Termika/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Termika/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Termika/src/pw/mini/po/lab1/termika/Bocian.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Termika/src/pw/mini/po/lab1/termika/Demonstrator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Termika/src/pw/mini/po/lab1/termika/ElementWodny.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Termika/src/pw/mini/po/lab1/termika/Gleba.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Termika/src/pw/mini/po/lab1/termika/GlebaKamienista.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Termika/src/pw/mini/po/lab1/termika/GlebaNiekamienista.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Termika/src/pw/mini/po/lab1/termika/Jantar2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Termika/src/pw/mini/po/lab1/termika/KomorkiTerenowe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Termika/src/pw/mini/po/lab1/termika/Latajacy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Termika/src/pw/mini/po/lab1/termika/Piasek.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Termika/src/pw/mini/po/lab1/termika/PodmoklaLaka.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Termika/src/pw/mini/po/lab1/termika/Sypkosc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Termika/src/pw/mini/po/lab1/termika/Szybowce.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Termika/src/pw/mini/po/lab1/termika/Teren.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Termika/src/pw/mini/po/lab1/termika/TerenWodny.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/Commandos/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/Commandos/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/Commandos/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/Commandos/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/Commandos/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/Commandos/Commandos.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/Commandos/src/pl/edu/pw/mini/zpoif/assignment2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/Commandos/src/pl/edu/pw/mini/zpoif/assignment2/commandos/Commandos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/Commandos/src/pl/edu/pw/mini/zpoif/assignment2/commandos/Kierowca.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/Commandos/src/pl/edu/pw/mini/zpoif/assignment2/commandos/KomandosZBeretem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/Commandos/src/pl/edu/pw/mini/zpoif/assignment2/commandos/Snajper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/Commandos/src/pl/edu/pw/mini/zpoif/assignment2/commandos/Szpieg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/Commandos/src/pl/edu/pw/mini/zpoif/assignment2/commandos/ZielonyBeret.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/Commandos/src/pl/edu/pw/mini/zpoif/assignment2/equipment/Equipment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/Commandos/src/pl/edu/pw/mini/zpoif/assignment2/equipment/Jedzenie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/Commandos/src/pl/edu/pw/mini/zpoif/assignment2/equipment/Weapon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/lab1_klasy_wewn/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/lab1_klasy_wewn/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/lab1_klasy_wewn/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/lab1_klasy_wewn/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/lab1_klasy_wewn/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/lab1_klasy_wewn/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/lab1_klasy_wewn/lab1_klasy_wewn.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/lab1_klasy_wewn/src/mini/pw/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/lab1_klasy_wewn/src/mini/pw/pszczola/Apis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/lab1_nawiedzone/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/lab1_nawiedzone/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/lab1_nawiedzone/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/lab1_nawiedzone/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/lab1_nawiedzone/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/lab1_nawiedzone/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/lab1_nawiedzone/lab1_nawiedzone.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/lab1_nawiedzone/src/pw/mini/lab1/Gosc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/lab1_nawiedzone/src/pw/mini/lab1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/lab1_nawiedzone/src/pw/mini/lab1/NawiedzoneMiejsce.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/lab1_nawiedzone/src/pw/mini/lab1/OpuszczonySzpital.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/lab1_nawiedzone/src/pw/mini/lab1/StaryZamek.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/lab1_nawiedzone/src/pw/mini/lab1/Straszacy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/lab1_nawiedzone/src/pw/mini/lab1/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/lab1_nawiedzone/src/pw/mini/lab1/Turysta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/lab1_nawiedzone/src/pw/mini/lab1/ZadluzoneMieszkanie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/lab1_nawiedzone/src/pw/mini/lab1/ZadluzoneMieszkanieKredyt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/lab1_nawiedzone/src/pw/mini/lab1/ZadluzoneMieszkanieWoda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/mafia/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/mafia/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/mafia/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/mafia/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/mafia/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/mafia/mafia.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/mafia/src/pl/pw/edu/mini/zpoif/task1/mafia/Departament.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/mafia/src/pl/pw/edu/mini/zpoif/task1/mafia/DepartamentHandlowy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/mafia/src/pl/pw/edu/mini/zpoif/task1/mafia/DepartamentOperacjiSpecjalnych.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/mafia/src/pl/pw/edu/mini/zpoif/task1/mafia/DepartamentRekrutacyjny.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/mafia/src/pl/pw/edu/mini/zpoif/task1/mafia/MafiaOrganization.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/mafia/src/pl/pw/edu/mini/zpoif/task1/mafia/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/mafia/src/pl/pw/edu/mini/zpoif/task1/mafia/Zarzad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/mafia/src/pl/pw/edu/mini/zpoif/task1/mafia/worker/MafiaWorker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OstryDyzur/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OstryDyzur/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OstryDyzur/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OstryDyzur/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OstryDyzur/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OstryDyzur/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OstryDyzur/OstryDyzur.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OstryDyzur/src/pl/pw/mini/lab2/ostryDyzur/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OstryDyzur/src/pl/pw/mini/lab2/ostryDyzur/pacjenci/Pacjent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OstryDyzur/src/pl/pw/mini/lab2/ostryDyzur/pacjenci/PacjentNiepelnoletni.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OstryDyzur/src/pl/pw/mini/lab2/ostryDyzur/pacjenci/PacjentNieubezpieczony.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OstryDyzur/src/pl/pw/mini/lab2/ostryDyzur/pacjenci/PacjentRozczeniowy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OstryDyzur/src/pl/pw/mini/lab2/ostryDyzur/pacjenci/PacjentUbezpieczony.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OstryDyzur/src/pl/pw/mini/lab2/ostryDyzur/pacjenci/PacjentWspolpracujacy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OstryDyzur/src/pl/pw/mini/lab2/ostryDyzur/szpital/Doctor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OstryDyzur/src/pl/pw/mini/lab2/ostryDyzur/szpital/PatientHolder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Samoloty.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/pw/mini/lab2/samolot/demonstrator/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/pw/mini/lab2/samolot/lotnisko/Lotnisko.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1a_2022/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1a_2022/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1a_2022/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1a_2022/src/pl/edu/pw/mini/po/grzybobranie/Konsument.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1a_2022/src/pl/edu/pw/mini/po/grzybobranie/Las.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1a_2022/src/pl/edu/pw/mini/po/grzybobranie/Muchomor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1a_2022/src/pl/edu/pw/mini/po/grzybobranie/MuchomorCesarski.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1a_2022/src/pl/edu/pw/mini/po/grzybobranie/MuchomorKolczastoglowy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1a_2022/src/pl/edu/pw/mini/po/grzybobranie/MuchomorSromotnikowy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1a_2022/src/pl/edu/pw/mini/po/grzybobranie/MuchomorSzarawy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1a_2022/src/pl/edu/pw/mini/po/grzybobranie/ToksycznyMuchomor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1a_2022/src/pl/edu/pw/mini/po/grzybobranie/Toksyny.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1a_2022/src/pl/edu/pw/mini/po/grzybobranie/Twardosc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1a_2022/src/pl/edu/pw/mini/po/grzybobranie/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/bin/pw/mini/po/lab/dom/zad1b_2022/Bozena.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/bin/pw/mini/po/lab/dom/zad1b_2022/Demonstrator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/bin/pw/mini/po/lab/dom/zad1b_2022_podloze/Element.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/bin/pw/mini/po/lab/dom/zad1b_2022_podloze/Obudowa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/bin/pw/mini/po/lab/dom/zad1b_2022_podloze/Pole.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/bin/pw/mini/po/lab/dom/zad1b_2022_podloze_miny/Mina.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/bin/pw/mini/po/lab/dom/zad1b_2022_podloze_miny/MinaPrzeciwczołgowa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/bin/pw/mini/po/lab/dom/zad1b_2022_podloze_miny/MinaPrzeciwpiechotna.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/bin/pw/mini/po/lab/dom/zad1b_2022_podloze_rosliny/Purchawka.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/bin/pw/mini/po/lab/dom/zad1b_2022_podloze_rosliny/Roślina.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/bin/pw/mini/po/lab/dom/zad1b_2022_podloze_rosliny/Trawa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/src/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/src/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/src/pw/mini/po/lab/dom/zad1b_2022/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/src/pw/mini/po/lab/dom/zad1b_2022/Bozena.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/src/pw/mini/po/lab/dom/zad1b_2022/Demonstrator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/src/pw/mini/po/lab/dom/zad1b_2022_podloze/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/src/pw/mini/po/lab/dom/zad1b_2022_podloze/Element.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/src/pw/mini/po/lab/dom/zad1b_2022_podloze/Obudowa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/src/pw/mini/po/lab/dom/zad1b_2022_podloze/Pole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/src/pw/mini/po/lab/dom/zad1b_2022_podloze_miny/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/src/pw/mini/po/lab/dom/zad1b_2022_podloze_miny/Mina.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/src/pw/mini/po/lab/dom/zad1b_2022_podloze_miny/MinaPrzeciwczołgowa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/src/pw/mini/po/lab/dom/zad1b_2022_podloze_miny/MinaPrzeciwpiechotna.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/src/pw/mini/po/lab/dom/zad1b_2022_podloze_rosliny/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/src/pw/mini/po/lab/dom/zad1b_2022_podloze_rosliny/Purchawka.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/src/pw/mini/po/lab/dom/zad1b_2022_podloze_rosliny/Roślina.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../zad1b_2022/src/pw/mini/po/lab/dom/zad1b_2022_podloze_rosliny/Trawa.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2o7Bm2ZG1aMynB8Y3V3TLGnBQMS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Kasia/Desktop/PO/my_repositories/dom/PO/semestr_3/punktowane2/Samoloty"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="01d0ba38-6883-400c-8192-46944686c921" name="Changes" comment="" />
+      <created>1730210893868</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730210893868</updated>
+    </task>
+    <servers />
+  </component>
+</project>
