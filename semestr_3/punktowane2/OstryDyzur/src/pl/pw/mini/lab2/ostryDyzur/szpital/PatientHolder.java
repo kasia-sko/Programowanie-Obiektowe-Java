@@ -75,7 +75,7 @@ public class PatientHolder {
         };
         pacjenci.forEach(notInsuredPatientDetector);
     }
-
+    
     public void detectTickBiten(){
         pacjenci.forEach(new Consumer<Pacjent>() {
             int counterKleszczy;
