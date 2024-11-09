@@ -114,7 +114,7 @@ public class Lotnisko {
             if(s1.nazwa.length() > 5 && s2.nazwa.length() > 5) {
                 return s1.nazwa.compareTo(s2.nazwa);
             }
-            return 0;
+            return -Integer.compare(s1.nazwa.length(), s2.nazwa.length());
         };
         samoloty.sort(sortowaniePoNazwie);
         System.out.println("Samoloty posortowane po nazwie");
@@ -134,7 +134,7 @@ public class Lotnisko {
                     if (s1.nazwa.length() > 5 && s2.nazwa.length() > 5) {
                         return s1.nazwa.compareTo(s2.nazwa);
                     }
-                    return 0;
+                    return -Integer.compare(s1.nazwa.length(), s2.nazwa.length());
                 };
             }
         };
@@ -147,7 +147,7 @@ public class Lotnisko {
 
     }
 
-    public static abstract class Samolot {
+    private static abstract class Samolot {
 
         protected Random random = new Random();
         protected String nazwa;
@@ -162,10 +162,10 @@ public class Lotnisko {
         }
 
         public void lec(int iloscGodzin){
-            iloscGodzinWPowietrzu += iloscGodzin;
             if(czyOdprawiony && !czyWPowietrzu){
                 System.out.println("Startujemy...");
                 czyWPowietrzu = true;
+                iloscGodzinWPowietrzu += iloscGodzin;
             }
             else if(czyWPowietrzu){
                 System.out.println("Lecimy");
@@ -193,9 +193,15 @@ public class Lotnisko {
             }
         }
 
+        public static class WyjatekEkonomiczny extends WyjatekLotniczy{
+            public WyjatekEkonomiczny(String message) {
+                super(message);
+            }
+        }
+
     }
 
-    public static class SamolotPasażerski extends Samolot{
+    private static class SamolotPasażerski extends Samolot{
 
         protected final int maxLiczbaPasazerow;
         protected int aktualnaLiczbaPasazerow;
@@ -217,14 +223,8 @@ public class Lotnisko {
             }
             czyOdprawiony = true;
             //System.out.println("Odprawiony");
-
         }
 
-        public static class WyjatekEkonomiczny extends WyjatekLotniczy{
-            public WyjatekEkonomiczny(String message) {
-                super(message);
-            }
-        }
 
         @Override
         public String toString() {
@@ -236,7 +236,7 @@ public class Lotnisko {
         }
     }
 
-    public static class SamolotTowarowy extends Samolot{
+    private static class SamolotTowarowy extends Samolot{
 
         protected int maxLadunek;
         protected int aktualnyLadunek;
@@ -247,14 +247,14 @@ public class Lotnisko {
         }
 
         @Override
-        public void odprawa(int iloscLadunku) throws SamolotPasażerski.WyjatekEkonomiczny {
+        public void odprawa(int iloscLadunku) throws WyjatekEkonomiczny {
             this.aktualnyLadunek = iloscLadunku;
             if(aktualnyLadunek < maxLadunek / 2){
-                throw new SamolotPasażerski.WyjatekEkonomiczny("Zbyt mały ładunek, nie opłaca się lecieć");
+                throw new WyjatekEkonomiczny("Zbyt mały ładunek, nie opłaca się lecieć");
             }
             else if (aktualnyLadunek > maxLadunek){
                 czyOdprawiony = true;
-                throw new SamolotPasażerski.WyjatekEkonomiczny("Za dużo o " + (aktualnyLadunek - maxLadunek) + " ton");
+                throw new WyjatekEkonomiczny("Za dużo o " + (aktualnyLadunek - maxLadunek) + " ton");
             }
             czyOdprawiony = true;
 
@@ -270,7 +270,7 @@ public class Lotnisko {
         }
     }
 
-    public static class Mysliwiec extends Samolot{
+    protected static class Mysliwiec extends Samolot{
          protected int iloscRakiet;
 
         public Mysliwiec(String nazwa, int predkoscMax) {
@@ -284,6 +284,9 @@ public class Lotnisko {
 
         public void atak(){
             if (czyWPowietrzu) {
+                if(iloscRakiet <= 0){
+                    laduj();
+                }
                 System.out.println("Ataaaaak");
                 iloscRakiet--;
                 if(iloscRakiet == 0){
