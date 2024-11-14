@@ -1,11 +1,12 @@
-package pl.pw.mini.zpoif.punkotwane3.statkipowietrzne;
+package pl.pw.mini.zpoif.punkotwane3.statkipowietrzne.Generator;
+
+import pl.pw.mini.zpoif.punkotwane3.statkipowietrzne.*;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
 public class GeneratorRozwiazan {
-
-    private List<StatekPowietrzny>  wszystkieStatkiPowietrzne;
+    private List<StatekPowietrzny> wszystkieStatkiPowietrzne;
     private List<NapedzanyStatekPowietrzny> napedzaneStatkiPowietrzne;
 
     public GeneratorRozwiazan(List<StatekPowietrzny> wszystkieStatkiPowietrzne, List<NapedzanyStatekPowietrzny> napedzaneStatkiPowietrzne){
@@ -13,41 +14,38 @@ public class GeneratorRozwiazan {
         this.napedzaneStatkiPowietrzne = napedzaneStatkiPowietrzne;
     }
 
+    // optional albo orElse(null)
+
     // zwraca napędzany statek powietrzny o największej prędkości wznoszenia.
-    public Optional<NapedzanyStatekPowietrzny> getNajszybciejWznoszacySieStatek(){
-        return napedzaneStatkiPowietrzne.stream().max((s1, s2) -> Double.compare(s1.getPredkoscWznoszenia(), s2.getPredkoscWznoszenia()));
+    public NapedzanyStatekPowietrzny getNajszybciejWznoszacySieStatek(){
+        return napedzaneStatkiPowietrzne.stream().
+                max(Comparator.comparingDouble(NapedzanyStatekPowietrzny::getPredkoscWznoszenia))
+                .orElse(null);
     }
 
     //zwraca samolot o największej powierzchni nosnej, gdzie poszukiwanie zaczyna się dopiero
     //od 6-tego statku powietrznego, z kolekcji napędzanych statków powietrznych.
-    public Optional<StatekPowietrzny> getSamolotONajwPowierzchniNosnej(){
-        if (wszystkieStatkiPowietrzne.size() < 6) {
-            return Optional.empty();
-        }
-
-        return wszystkieStatkiPowietrzne.stream()
+    public StatekPowietrzny getSamolotONajwPowierzchniNosnej(){
+        return napedzaneStatkiPowietrzne.stream()
                 .skip(5)
                 .filter(statek -> statek instanceof Samolot)
-                .max((statek1, statek2) -> {
-                    double powierzchniaNosna1 = ((Samolot) statek1).getPowierzchniaNosna();
-                    double powierzchniaNosna2 = ((Samolot) statek2).getPowierzchniaNosna();
-                    return Double.compare(powierzchniaNosna1, powierzchniaNosna2);
-                });
+                .map(statek -> (Samolot)statek)
+                .max(Comparator.comparingDouble(Samolot::getPowierzchniaNosna))
+                .orElse(null);
     }
 
     // zwraca śmigłowiec o najmniejszej masie, którego typ nie zaczyna się na "Mi".
     //Poszukiwania należy zacząć dopiero od 4-go śmigłowca na liście bazowej. Korzystamy z
     //kolekcji napędzanych statków powietrznych.
-    public Optional<Smiglowiec> getSmiglowiecONajmniejszejMasie(){
-        if(wszystkieStatkiPowietrzne.size() < 4){
-            return Optional.empty();
-        }
-        return wszystkieStatkiPowietrzne.stream().
+    public Smiglowiec getSmiglowiecONajmniejszejMasie(){
+        return napedzaneStatkiPowietrzne.stream().
                 skip(4)
+                //.filter(Smiglowiec.class::isInstance)
                 .filter(statek -> statek instanceof Smiglowiec)
                 .map(statek -> (Smiglowiec) statek)
-                .filter(statek -> statek.getTyp().startsWith("Mi"))
-                .min((s1, s2)  -> Integer.compare(s1.getMasa(), s2.getMasa()));
+                .filter(statek -> !statek.getTyp().startsWith("Mi"))
+                .min(Comparator.comparingInt(StatekPowietrzny::getMasa))
+                .orElse(null);
     }
 
     // Metoda: Set<StatekPowietrzny> getSamolotyLubSmiglowceBezPierwszych4
@@ -55,12 +53,10 @@ public class GeneratorRozwiazan {
     //wznoszenia nie większej niż 15 metrów/s i o masie mniejszej niż 1300 kg, po pominieciu
     //pierwszych czterech statków spełniających podane wyżej parametry.
     public Set<StatekPowietrzny> getSamolotyLubSmiglowceBezPierwszych4(){
-
-        return wszystkieStatkiPowietrzne.stream()
-                .skip(4)
+        return napedzaneStatkiPowietrzne.stream()
                 .filter(statek -> statek instanceof Samolot || statek instanceof  Smiglowiec)
-                .filter(statek -> ((NapedzanyStatekPowietrzny) statek).getPredkoscWznoszenia() <= 15)
-                .filter(statek -> statek.getMasa() < 1300)
+                .filter(statek -> statek.getPredkoscWznoszenia() <= 15 && statek.getMasa() < 13000) // nie bylo nic dla 1300
+                .skip(4)
                 .limit(3)
                 .collect(Collectors.toSet());
     }
@@ -70,23 +66,30 @@ public class GeneratorRozwiazan {
     //nie uwzględniamy 3 ostatnich śmigłowców na bazowej liście napędzanych statków
     //powietrznych.
     public List<NapedzanyStatekPowietrzny> get4SmiglowceOnajwiekszymZasiegu(){
+        int rozmiar = napedzaneStatkiPowietrzne.stream()
+                .filter(Smiglowiec.class::isInstance)
+                .collect(Collectors.toSet()).size();
+
         return napedzaneStatkiPowietrzne.stream()
                 .filter(statek -> statek instanceof Smiglowiec)
-                .filter(statek -> ((Smiglowiec)statek).getSrednicaWirnika() >= 15)
-                .skip((Math.max(0, napedzaneStatkiPowietrzne.size() - 3)))
-                .sorted((s1, s2) -> Integer.compare(((Smiglowiec)s1).getZasieg(), ((Smiglowiec)s2).getZasieg()))
+                .map(Smiglowiec.class::cast)
+                .limit(rozmiar-3)
+                .filter(statek -> statek.getSrednicaWirnika() >= 15)
+                // domyslnie rosnaco posortowane
+                .sorted(Comparator.comparingDouble(NapedzanyStatekPowietrzny::getZasieg).reversed())
                 .limit(4)
                 .collect(Collectors.toList());
     }
 
     // Sposród siedzeniowych spadochronów ratowniczych zwrócić ten o najwyższej wysokości
     //minimalnej.
-    public Optional<Spadochron> getSiedzeniowySpadochron(){
+    public Spadochron getSiedzeniowySpadochron(){
         return wszystkieStatkiPowietrzne.stream()
-                .filter(statek -> statek instanceof Spadochron)
-                .map(statek -> (Spadochron)statek)
                 .filter(statek -> statek instanceof SpadochronRatowniczy)
-                .max((s1,s2) -> Integer.compare(((SpadochronRatowniczy)s1).getMinimalnaWysokosc(), ((SpadochronRatowniczy)s2).getMinimalnaWysokosc()));
+                .map(SpadochronRatowniczy.class::cast)
+                .filter(SpadochronRatowniczy::isSiedzeniowy)
+                .max(Comparator.comparingInt(SpadochronRatowniczy::getMinimalnaWysokosc))
+                .orElse(null);
     }
 
     //Zwraca mapę szybowców (począwszy od 2-giego już po wyeliminowaniu pozostałych
@@ -94,13 +97,13 @@ public class GeneratorRozwiazan {
     //doskonałość. W przypadku wystąpnienia dupikatów, wstawiamy ten o dluższej nazwie typu.
     public Map<Integer, Szybowiec> getMapaSzybowcowPerDoskonalosc(){
         return wszystkieStatkiPowietrzne.stream()
-                .skip(1)  // Pomijamy pierwszy element
                 .filter(statek -> statek instanceof Szybowiec)
-                .map(statek -> (Szybowiec) statek)
+                .skip(1)
+                .map(Szybowiec.class::cast)
                 .collect(Collectors.toMap(
-                        Szybowiec::getDoskonalosc,  // Klucz: doskonałość
-                        szybowiec -> szybowiec,  // Wartość: szybowiec
-                        (s1, s2) -> s1.getTyp().length() >= s2.getTyp().length() ? s1 : s2  // Jeśli są duplikaty, wybieramy szybowiec o dłuższej nazwie
+                        Szybowiec::getDoskonalosc,  // Klucz
+                        szybowiec -> szybowiec,  // Wartosc
+                        (existing, replacement) -> existing.getTyp().length() >= replacement.getTyp().length() ? existing : replacement  // duplikaty - wybieramy szybowiec o dłuższej nazwie
                 ));
     }
 
@@ -108,23 +111,20 @@ public class GeneratorRozwiazan {
     //niż 15000. Analiza rozpoczyna od 4-go statku powietrznego. Ostatni samolot o tej masie jest
     //pomijany.
     public double getSumePredkosciWznoszeniaSamolotow(){
-        List<Samolot> samoloty = wszystkieStatkiPowietrzne.stream()
+        List<Samolot> samoloty = napedzaneStatkiPowietrzne.stream()
                 .skip(3)
                 .filter(statek -> statek instanceof Samolot)
-                .map(statek -> (Samolot) statek)
+                .map(Samolot.class::cast)
                 .filter(samolot -> samolot.getMasa() <= 15000)
-                .limit(5)
                 .collect(Collectors.toList());
 
-        // Usuwamy ostatni samolot z listy, jeśli jest
-        if (samoloty.size() > 0) {
-            samoloty.remove(samoloty.size() - 1);  // Usuwamy ostatni samolot
-        }
-
         return samoloty.stream()
-                .mapToDouble(Samolot::getPredkoscWznoszenia)  // Pobieramy prędkość wznoszenia każdego samolotu
-                .sum();  // Sumujemy prędkości
+                .limit(samoloty.size() - 1) // pominiecie ostatniego
+                .limit(5)
+                .mapToDouble(Samolot::getPredkoscWznoszenia).sum();
+
     }
+
 
     //Zwraca mapę zawierającą samoloty lub śmigłowce, zbudowaną z 10-ciu najlżejszych
     //statków powietrznych. Analiza rozpoczyna się od 11-go statku powietrznego na liście
@@ -137,24 +137,28 @@ public class GeneratorRozwiazan {
                 .sorted(Comparator.comparingDouble(StatekPowietrzny::getMasa))
                 .distinct()
                 .limit(10)
+                // ?????
                 .collect(Collectors.toMap(
                         statek -> statek.getClass().getSimpleName(),  // Klucz: typ statku powietrznego
                         statek -> statek,
-                        (nowy, stary) -> nowy));
+                        (existing, replacement) -> replacement));
     }
 
     // Metoda zwraca listę stringów zawierających wszystkie dane spadochronów ratowniczych.
     //Lista ograniczona do dwóch elementów. Ostatni spadochron ratowniczy na liście bazowej
     //nie jest uwzględniany, powtórzenia usunięte.
     public List<String> zwrocNazwy(){
-        return wszystkieStatkiPowietrzne.stream()
+        List<SpadochronRatowniczy> spadochrony = wszystkieStatkiPowietrzne.stream()
                 .filter(statek -> statek instanceof SpadochronRatowniczy)
-                .map(statek -> (SpadochronRatowniczy) statek)
-                .map(SpadochronRatowniczy::toString)
-                .limit(wszystkieStatkiPowietrzne.size() - 1)
+                .map(SpadochronRatowniczy.class::cast)
                 .distinct()
-                .limit(2)
                 .collect(Collectors.toList());
+
+        return spadochrony.stream()
+                .limit(spadochrony.size() - 1)
+                .limit(2)
+                .map(Spadochron::toString)
+                .toList();
     }
 
     //Z P=0.1 zmienia nazwę statku powietrznego poprzez otoczenie jej nawiasami
@@ -162,23 +166,23 @@ public class GeneratorRozwiazan {
     //powietrznych spełniających ryterium masy. Operacje są wykonywane dla samolotów z
     //wyłączeniem pięciu najszybszych.
     public void modyfikujNazwy(){
-        List<Samolot> samoloty = wszystkieStatkiPowietrzne.stream()
+        Random random = new Random();
+
+        napedzaneStatkiPowietrzne.stream()
                 .filter(statek -> statek instanceof Samolot)
-                .map(statek -> (Samolot) statek)
-                .sorted(Comparator.comparingDouble(Samolot::getPredkoscWznoszenia))
+                .map(Samolot.class::cast)
+                .sorted(Comparator.comparingDouble(Samolot::getPredkoscWznoszenia).reversed())
                 .skip(5)
                 .filter(samolot -> samolot.getMasa() > 5000)
-                .limit(15)  // Bierzemy tylko pierwsze 15 samolotów
-                .collect(Collectors.toList());
+                .limit(15)
+                .forEach(samolot -> {
+                    if (random.nextInt(10) < 8) { // testowe prawdopodobienstwo
+                        String nowaNazwa = "[" + samolot.getTyp() + "]";
+                        samolot.setTyp(nowaNazwa);
+                        System.out.println("Zmieniam nazwe");
+                    }
+                });
 
-        Random rand = new Random();
-        for (Samolot samolot : samoloty) {
-            if (rand.nextDouble() < 0.1) {
-                String nowaNazwa = "[" + samolot.getTyp() + "]";
-                samolot.setTyp(nowaNazwa);
-            }
-        }
     }
-
 
 }

@@ -14,7 +14,7 @@ public class StatkiImplementacja implements Statki{
     @Override
     public StatekNawodny getNajciezszyStatek() {
         return statkiNawodne.stream()
-                .max((s1,s2) -> Integer.compare(s1.getMasa(), s2.getMasa()))
+                .max(Comparator.comparingInt(StatekNawodny::getMasa))
                 .orElse(null); // zamiast Optional<StatekNawodny>
     }
 
@@ -32,8 +32,8 @@ public class StatkiImplementacja implements Statki{
     public JachtMotorowy getJachtMotorowyONajwiekszejMocySilnika() {
         return statkiNawodne.stream()
                 .filter(statek -> statek instanceof JachtMotorowy)
-                .map(statek ->(JachtMotorowy)statek)
-                .max(Comparator.comparingInt(statek -> statek.getMocSilnika()))
+                .map(JachtMotorowy.class::cast)
+                .max(Comparator.comparingInt(JachtMotorowy::getMocSilnika))
                 .orElse(null);
     }
 
@@ -43,9 +43,9 @@ public class StatkiImplementacja implements Statki{
     public JachtKabinowy getLekkiJachtKabinowyONajmniejszymOzaglowaniu() {
         return statkiNawodne.stream()
                 .filter(statek -> statek instanceof JachtKabinowy)
-                .map(statek -> (JachtKabinowy)statek)
+                .map(JachtKabinowy.class::cast)
                 .filter(statek -> statek.getMasa() <= 1000)
-                .min(Comparator.comparingDouble(statek -> statek.getPowierzchniaZagla()))
+                .min(Comparator.comparingDouble(JachtKabinowy::getPowierzchniaZagla))
                 .orElse(null);
     }
 
@@ -58,13 +58,14 @@ public class StatkiImplementacja implements Statki{
                 .limit(11)
                 .collect(Collectors.toSet());
     }
+
     //  Zwraca statki posortowane malejąco względem długości  bez uwzględnienia w sortowaniu
     //2-óch pierwszych na liście bazowej.
     @Override
     public List<StatekNawodny> getStatkiPosortowaneWzgledemDlugosciBez2() {
         return statkiNawodne.stream()
                 .skip(2)
-                .sorted(Comparator.comparing(StatekNawodny::getDlugosc))
+                .sorted(Comparator.comparing(StatekNawodny::getDlugosc).reversed())
                 .collect(Collectors.toList());
     }
 
@@ -74,7 +75,7 @@ public class StatkiImplementacja implements Statki{
     public List<JachtZaglowy> getPierwsze8ZPosortowanychWzgledemOzaglowaniaBezTrzechPierwszych() {
         return statkiNawodne.stream()
                 .filter(statek -> statek instanceof JachtKabinowy || statek instanceof JachtOdkrytopokladowy)
-                .map(statek -> (JachtZaglowy)statek)
+                .map(JachtZaglowy.class::cast)
                 .sorted(Comparator.comparing(JachtZaglowy::getPowierzchniaZagla).reversed())
                 .skip(3)
                 .limit(8)
@@ -87,7 +88,7 @@ public class StatkiImplementacja implements Statki{
     public void oznaczJachtyDobreNaPlycizny() {
         statkiNawodne.stream()
                 .filter(statek -> statek instanceof JachtKabinowy)
-                .map(statek -> (JachtKabinowy)statek)
+                .map(JachtKabinowy.class::cast)
                 .filter(statek -> statek.getZanurzenie() <= 30 && statek.getMasa() <= 1300)
                 .forEach(statek -> statek.setKomentarz("Jachtem " + statek.getTyp() + " wyplyniesz na kazda plycizne"));
     }
@@ -99,7 +100,7 @@ public class StatkiImplementacja implements Statki{
     public String get12UnikalnychNazwTypow() {
         return statkiNawodne.stream()
                 .filter(statek -> statek instanceof Jacht)
-                .map(statek -> (Jacht)statek)
+                .map(Jacht.class::cast)
                 .filter(statek -> statek.getMasa() > 2000)
                 .map(Jacht::getTyp)
                 .distinct()
@@ -115,11 +116,11 @@ public class StatkiImplementacja implements Statki{
     public Map<String, JachtMotorowy> getMapaJachtowMotorowych() {
         return statkiNawodne.stream()
                 .filter(statek -> statek instanceof JachtMotorowy)
-                .map(statek -> (JachtMotorowy)statek)
+                .map(JachtMotorowy.class::cast)
                 .collect(Collectors.toMap(
                         JachtMotorowy::getTyp,
-                        statek -> (JachtMotorowy)statek,
-                        (s1, s2) -> s1.getNazwaProducenta().length() >= s2.getNazwaProducenta().length() ? s1 : s2));
+                        statek -> statek,
+                        (existing, replacement) -> existing.getNazwaProducenta().length() >= replacement.getNazwaProducenta().length() ? existing : replacement));
     }
 
     //Zwraca listę jachtów zawierającą co najwyżej 10 odkrytokładowych jachtów oraz
@@ -132,22 +133,20 @@ public class StatkiImplementacja implements Statki{
     //iloście nie większej niż 4
     @Override
     public List<Jacht> getJachtyOdkrytopokladoweIMotoroweJednePoDrugich() {
-        List<Jacht> jachty = statkiNawodne.stream()
-                .filter(statek -> statek instanceof JachtOdkrytopokladowy || statek instanceof JachtMotorowy)
-                .map(statek -> (Jacht)statek)
+        List<Jacht> motorowe = statkiNawodne.stream()
+                .filter(statek -> statek instanceof JachtMotorowy)
+                .map(Jacht.class::cast)
                 .filter(statek -> statek.getNazwaProducenta().toLowerCase().equals("regal"))
+                .skip(4)
+                .limit(4)
                 .collect(Collectors.toList());
-        List<Jacht> odkrytopokladowe = jachty.stream()
+
+        List<Jacht> odkrytopokladowe = statkiNawodne.stream()
                 .filter(statek -> statek instanceof JachtOdkrytopokladowy)
+                .map(Jacht.class::cast)
                 .limit(10)
                 .collect(Collectors.toList());
 
-        List<Jacht> motorowe = jachty.stream()
-                .filter(statek -> statek instanceof JachtMotorowy)
-                .limit(10 - odkrytopokladowe.size())
-                .collect(Collectors.toList());
-
-        // Łączymy wyniki
         odkrytopokladowe.addAll(motorowe);
         return odkrytopokladowe;
 
