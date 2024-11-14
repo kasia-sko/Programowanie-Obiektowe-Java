@@ -139,9 +139,10 @@ public class GeneratorRozwiazan {
                 .limit(10)
                 // ?????
                 .collect(Collectors.toMap(
-                        statek -> statek.getClass().getSimpleName(),  // Klucz: typ statku powietrznego
+                        StatekPowietrzny::getTyp,
                         statek -> statek,
-                        (existing, replacement) -> replacement));
+                        (existing, replacement) -> existing.getMasa() < replacement.getMasa() ? existing : replacement));
+
     }
 
     // Metoda zwraca listę stringów zawierających wszystkie dane spadochronów ratowniczych.
