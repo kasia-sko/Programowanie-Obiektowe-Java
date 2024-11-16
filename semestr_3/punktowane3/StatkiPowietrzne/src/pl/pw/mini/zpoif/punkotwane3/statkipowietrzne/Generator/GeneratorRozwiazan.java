@@ -38,10 +38,10 @@ public class GeneratorRozwiazan {
     //Poszukiwania należy zacząć dopiero od 4-go śmigłowca na liście bazowej. Korzystamy z
     //kolekcji napędzanych statków powietrznych.
     public Smiglowiec getSmiglowiecONajmniejszejMasie(){
-        return napedzaneStatkiPowietrzne.stream().
-                skip(4)
+        return napedzaneStatkiPowietrzne.stream()
                 //.filter(Smiglowiec.class::isInstance)
                 .filter(statek -> statek instanceof Smiglowiec)
+                .skip(3)
                 .map(statek -> (Smiglowiec) statek)
                 .filter(statek -> !statek.getTyp().startsWith("Mi"))
                 .min(Comparator.comparingInt(StatekPowietrzny::getMasa))
