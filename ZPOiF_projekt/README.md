@@ -1,6 +1,6 @@
 ## WALUTOZAUR
 
-In this application made in **Java** using **JavaFX** and **Maven**, you can check currency exchange rates obtained from the National Bank of Poland.
+In this application made in **Java** using **JavaFX**, **Jackson**, **Jakarta Mail API** and **Maven**, you can check currency exchange rates obtained from the National Bank of Poland.
 
 In the first tab, you can:
 * Create a chart of the selected currency's exchange rate over a chosen time period,
