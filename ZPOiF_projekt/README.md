@@ -1,18 +1,21 @@
 ## WALUTOZAUR
 
-W tej aplikacji sprawdzisz dane dotyczące kursów walut pobieranych z Narodowego Banku Polskiego.  
-W pierwszej zakładce możesz:  
-- stworzyć wykres kursu wybranej waluty w wybranym przedziale czasowym,  
-- sprawdzić, ile zarobiłbyś inwestując wpisaną kwotę w złotówkach.  
+In this application made in **Java** using **JavaFX** and **Maven**, you can check currency exchange rates obtained from the National Bank of Poland.
 
-W drugiej zakładce możesz:  
-- sprawdzić aktualny kurs wybranej waluty,  
-- podać swój adres mailowy i otrzymać informację o interesującym cię kursie,  
-- skorzystać z kalkulatora walut, aby przeliczyć wartości pomiędzy różnymi walutami.  
+In the first tab, you can:
+* Create a chart of the selected currency's exchange rate over a chosen time period,
+* Check how much you would have earned by investing a specified amount in Polish złoty.
 
-Projekt powstał w ramach przedmiotu *Zaawansowane Programowanie Funkcyjne i Obiektowe*, Inżynieria i Analiza Danych na MINI PW.
+In the second tab, you can:
+* Check the current exchange rate of the selected currency,
+* Provide your email address to receive information about the exchange rate you're interested in,
+* Use the currency converter to convert values between different currencies.
 
-Autorzy: Katarzyna Skoczylas, Aleksandra Zawadka, Martyna Sadowska.
+This project was developed as part of the Advanced Functional and Object-Oriented Programming course during the third semester (winter 2024/2025) at WUT.
 
+There is a presentation and documentation included.
 
-
+### Authors:
+- [Katarzyna Skoczylas](https://github.com/kasia-sko)
+- [Martyna Sadowska](https://github.com/Martyna-265)
+- [Aleksandra Zawadka](https://github.com/Ola-zaw)
